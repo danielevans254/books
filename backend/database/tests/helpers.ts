@@ -9,8 +9,8 @@ import SingleValue from '../../../schemas/core/SingleValue.json';
 import { SchemaMap, SchemaStub, SchemaStubMap } from '../../../schemas/types';
 
 const Customer = {
-  name: 'Customer',
-  label: 'Customer',
+  name: 'Student/Parent',
+  label: 'Student/Parent',
   fields: [
     {
       fieldname: 'name',
@@ -37,7 +37,7 @@ const Customer = {
 
 const SalesInvoiceItem = {
   name: 'SalesInvoiceItem',
-  label: 'Sales Invoice Item',
+  label: 'Fee Statement Item',
   isChild: true,
   fields: [
     {
@@ -71,14 +71,14 @@ const SalesInvoiceItem = {
 
 const SalesInvoice = {
   name: 'SalesInvoice',
-  label: 'Sales Invoice',
+  label: 'Fee Statement',
   isSingle: false,
   isChild: false,
   isSubmittable: true,
   keywordFields: ['name', 'customer'],
   fields: [
     {
-      label: 'Invoice No',
+      label: 'Receipt No',
       fieldname: 'name',
       fieldtype: 'Data',
       required: true,
