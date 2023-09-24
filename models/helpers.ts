@@ -68,9 +68,9 @@ export function getMakeInvoiceAction(
   fyo: Fyo,
   schemaName: ModelNameEnum.Shipment | ModelNameEnum.PurchaseReceipt
 ): Action {
-  let label = fyo.t`Sales Invoice`;
+  let label = fyo.t`Fee Statement`;
   if (schemaName === ModelNameEnum.PurchaseReceipt) {
-    label = fyo.t`Purchase Invoice`;
+    label = fyo.t`Expenses`;
   }
 
   return {

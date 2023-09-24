@@ -38,7 +38,7 @@
     },
     {
       "fieldname": "salesInvoiceNumberSeries",
-      "label": "Sales Invoice Number Series",
+      "label": "Fee Statement Number Series",
       "fieldtype": "Link",
       "target": "NumberSeries",
       "create": true,
@@ -46,7 +46,7 @@
     },
     {
       "fieldname": "purchaseInvoiceNumberSeries",
-      "label": "Purchase Invoice Number Series",
+      "label": "Expenses Number Series",
       "fieldtype": "Link",
       "target": "NumberSeries",
       "create": true,
@@ -94,13 +94,13 @@
     },
     {
       "fieldname": "salesInvoiceTerms",
-      "label": "Sales Invoice Terms",
+      "label": "Fee Statement Terms",
       "fieldtype": "Text",
       "section": "Terms"
     },
     {
       "fieldname": "purchaseInvoiceTerms",
-      "label": "Purchase Invoice Terms",
+      "label": "Expenses Terms",
       "fieldtype": "Text",
       "section": "Terms"
     },
@@ -118,14 +118,14 @@
     },
     {
       "fieldname": "salesInvoicePrintTemplate",
-      "label": "Sales Invoice Print Template",
+      "label": "Fee Statement Print Template",
       "fieldtype": "Link",
       "target": "PrintTemplate",
       "section": "Print Templates"
     },
     {
       "fieldname": "purchaseInvoicePrintTemplate",
-      "label": "Purchase Invoice Print Template",
+      "label": "Expense Print Template",
       "fieldtype": "Link",
       "target": "PrintTemplate",
       "section": "Print Templates"

@@ -618,7 +618,7 @@ async function showInsufficientInventoryDialog(doc: SalesInvoice) {
       .join(', ');
     const detail = [
       t`The following items have insufficient quantity for Shipment: ${list}`,
-      t`Continue submitting Sales Invoice?`,
+      t`Continue submitting Fee Statement?`,
     ];
 
     return (await showDialog({
@@ -989,7 +989,7 @@ export async function deleteDb(filePath: string) {
   } else if (error?.code === 'EPERM') {
     await showDialog({
       title: t`Cannot Delete`,
-      detail: t`Close Frappe Books and try manually.`,
+      detail: t`Close 4SDA Inc and try manually.`,
       type: 'error',
     });
   } else if (error) {

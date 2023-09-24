@@ -119,7 +119,7 @@ function getCreateList(fyo: Fyo): SearchItem[] {
       create: createFilters.Customers,
     },
     {
-      label: t`Supplier`,
+      label: t`Expense Payable`,
       schemaName: ModelNameEnum.Party,
       create: createFilters.Suppliers,
     },
@@ -129,7 +129,7 @@ function getCreateList(fyo: Fyo): SearchItem[] {
       create: createFilters.Party,
     },
     {
-      label: t`Sales Item`,
+      label: t`PaymentItem`,
       schemaName: ModelNameEnum.Item,
       create: createFilters.SalesItems,
     },
@@ -239,12 +239,12 @@ function getListViewList(fyo: Fyo): SearchItem[] {
 
   const filteredLists = [
     {
-      label: t`Customers`,
+      label: t`Student`,
       route: `/list/Party/${t`Customers`}`,
       filters: routeFilters.Customers,
     },
     {
-      label: t`Suppliers`,
+      label: t`Expense Payables`,
       route: `/list/Party/${t`Suppliers`}`,
       filters: routeFilters.Suppliers,
     },
@@ -254,12 +254,12 @@ function getListViewList(fyo: Fyo): SearchItem[] {
       filters: routeFilters.Party,
     },
     {
-      label: t`Sales Items`,
+      label: t`PaymentItems`,
       route: `/list/Item/${t`Sales Items`}`,
       filters: routeFilters.SalesItems,
     },
     {
-      label: t`Sales Payments`,
+      label: t`Income`,
       route: `/list/Payment/${t`Sales Payments`}`,
       filters: routeFilters.SalesPayments,
     },
@@ -274,7 +274,7 @@ function getListViewList(fyo: Fyo): SearchItem[] {
       filters: routeFilters.Items,
     },
     {
-      label: t`Purchase Payments`,
+      label: t`Payments`,
       route: `/list/Payment/${t`Purchase Payments`}`,
       filters: routeFilters.PurchasePayments,
     },

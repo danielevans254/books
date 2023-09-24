@@ -150,33 +150,33 @@ function getCompleteSidebar(): SidebarConfig {
       icon: 'dashboard',
     },
     {
-      label: t`Sales`,
+      label: t`Income`,
       name: 'sales',
       icon: 'sales',
       route: '/list/SalesInvoice',
       items: [
         {
-          label: t`Sales Invoices`,
+          label: t`Fee Statements`,
           name: 'sales-invoices',
           route: '/list/SalesInvoice',
           schemaName: 'SalesInvoice',
         },
         {
-          label: t`Sales Payments`,
+          label: t`Fee Payments`,
           name: 'payments',
           route: `/list/Payment/${t`Sales Payments`}`,
           schemaName: 'Payment',
           filters: routeFilters.SalesPayments,
         },
         {
-          label: t`Customers`,
+          label: t`Student/Parents`,
           name: 'customers',
           route: `/list/Party/${t`Customers`}`,
           schemaName: 'Party',
           filters: routeFilters.Customers,
         },
         {
-          label: t`Sales Items`,
+          label: t`Fee Components`,
           name: 'sales-items',
           route: `/list/Item/${t`Sales Items`}`,
           schemaName: 'Item',
@@ -185,7 +185,7 @@ function getCompleteSidebar(): SidebarConfig {
       ] as SidebarItem[],
     },
     {
-      label: t`Purchases`,
+      label: t`Expenses`,
       name: 'purchases',
       icon: 'purchase',
       route: '/list/PurchaseInvoice',
@@ -204,7 +204,7 @@ function getCompleteSidebar(): SidebarConfig {
           filters: routeFilters.PurchasePayments,
         },
         {
-          label: t`Suppliers`,
+          label: t`Expense Payables`,
           name: 'suppliers',
           route: `/list/Party/${t`Suppliers`}`,
           schemaName: 'Party',

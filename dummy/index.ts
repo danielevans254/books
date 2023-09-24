@@ -256,7 +256,7 @@ async function getSalesInvoices(
     const date = dates[d];
 
     notifier?.(
-      `Creating Sales Invoices, ${d} out of ${dates.length}`,
+      `Creating Fee Statements, ${d} out of ${dates.length}`,
       safeParseInt(d) / dates.length
     );
     const customer = sample(customers);
@@ -337,7 +337,7 @@ async function getSalesPurchaseInvoices(
 ): Promise<PurchaseInvoice[]> {
   const invoices = [] as PurchaseInvoice[];
   /**
-   * Group all sales invoices by their YYYY-MM.
+   * Group all Fee Statements by their YYYY-MM.
    */
   const dateGrouped = salesInvoices
     .map((si) => {

@@ -62,7 +62,7 @@ export default defineComponent({
     this.groups = [
       {
         label: t`Global`,
-        description: t`Applicable anywhere in Frappe Books`,
+        description: t`Applicable anywhere in 4SDA Inc`,
         collapsed: false,
         shortcuts: [
           {

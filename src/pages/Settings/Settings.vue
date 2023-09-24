@@ -221,7 +221,7 @@ export default defineComponent({
 
       this.update();
       await showDialog({
-        title: this.t`Reload Frappe Books?`,
+        title: this.t`Reload 4SDA Inc?`,
         detail: this.t`Changes made to settings will be visible on reload.`,
         type: 'info',
         buttons: [

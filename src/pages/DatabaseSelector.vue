@@ -13,7 +13,7 @@
       <!-- Welcome to Frappe Books -->
       <div class="px-4 py-4">
         <h1 class="text-2xl font-semibold select-none">
-          {{ t`Welcome to Frappe Books` }}
+          {{ t`Welcome to 4SDA Inc` }}
         </h1>
         <p class="text-gray-600 text-base select-none">
           {{
@@ -37,10 +37,10 @@
 
         <div>
           <p class="font-medium">
-            {{ t`New Company` }}
+            {{ t`New File` }}
           </p>
           <p class="text-sm text-gray-600">
-            {{ t`Create a new company and store it on your computer` }}
+            {{ t`Create a new file and store it on your computer` }}
           </p>
         </div>
       </div>
@@ -56,10 +56,10 @@
         </div>
         <div>
           <p class="font-medium">
-            {{ t`Existing Company` }}
+            {{ t`Import File` }}
           </p>
           <p class="text-sm text-gray-600">
-            {{ t`Load an existing company from your computer` }}
+            {{ t`Import existing file from your computer` }}
           </p>
         </div>
       </div>
@@ -76,10 +76,10 @@
         </div>
         <div>
           <p class="font-medium">
-            {{ t`Create Demo` }}
+            {{ t`Create Demo File` }}
           </p>
           <p class="text-sm text-gray-600">
-            {{ t`Create a demo company to try out Frappe Books` }}
+            {{ t`Create a demo for testing data` }}
           </p>
         </div>
       </div>

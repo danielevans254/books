@@ -281,7 +281,7 @@ export abstract class BaseGSTR extends Report {
         width: 1.5,
       },
       {
-        label: t`Invoice No.`,
+        label: t`Receipt No.`,
         fieldname: 'invNo',
         fieldtype: 'Data',
       },

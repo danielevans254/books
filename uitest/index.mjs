@@ -13,7 +13,7 @@ const appSourcePath = path.join(root, 'dist_electron', 'build', 'main.js');
   window.setDefaultTimeout(60_000);
 
   test('load app', async (t) => {
-    t.equal(await window.title(), 'Frappe Books', 'title matches');
+    t.equal(await window.title(), '4SDA Inc', 'title matches');
 
     await new Promise((r) => window.once('load', () => r()));
     t.ok(true, 'window has loaded');
@@ -56,7 +56,7 @@ const appSourcePath = path.join(root, 'dist_electron', 'build', 'main.js');
     await window.getByPlaceholder('Company Name').fill('Test Company');
     await window.getByPlaceholder('John Doe').fill('Test Owner');
     await window.getByPlaceholder('john@doe.com').fill('test@example.com');
-    await window.getByPlaceholder('Select Country').fill('India');
+    await window.getByPlaceholder('Select Country').fill('Philippines');
     await window.getByPlaceholder('Select Country').blur();
     await window.getByPlaceholder('Prime Bank').fill('Test Bank');
     await window.getByPlaceholder('Prime Bank').blur();

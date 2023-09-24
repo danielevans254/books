@@ -82,7 +82,7 @@ export class Item extends Doc {
     return [
       {
         group: fyo.t`Create`,
-        label: fyo.t`Sales Invoice`,
+        label: fyo.t`Fee Statement`,
         condition: (doc) => !doc.notInserted && doc.for !== 'Purchases',
         action: async (doc, router) => {
           const invoice = fyo.doc.getNewDoc('SalesInvoice');
@@ -96,7 +96,7 @@ export class Item extends Doc {
       },
       {
         group: fyo.t`Create`,
-        label: fyo.t`Purchase Invoice`,
+        label: fyo.t`Expenses`,
         condition: (doc) => !doc.notInserted && doc.for !== 'Sales',
         action: async (doc, router) => {
           const invoice = fyo.doc.getNewDoc('PurchaseInvoice');
