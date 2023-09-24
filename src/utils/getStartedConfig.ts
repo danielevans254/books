@@ -90,9 +90,9 @@ export function getGetStartedConfig(): GetStartedConfigItem[] {
         },
         {
           key: 'Add Customers',
-          label: t`Add Customers`,
+          label: t`Add Student`,
           icon: 'customer',
-          description: t`Add a few customers to create your first sales invoice`,
+          description: t`Add a few Students to create your first Fee Statement`,
           action: () =>
             routeTo({
               path: `/list/Party/${t`Customers`}`,
@@ -105,10 +105,10 @@ export function getGetStartedConfig(): GetStartedConfigItem[] {
             'https://docs.frappebooks.com/setting-up/initial-entries.html#add-customers',
         },
         {
-          key: 'Create Sales Invoice',
-          label: t`Create Sales Invoice`,
+          key: 'Create Fee Statement',
+          label: t`Create Fee Statement`,
           icon: 'sales-invoice',
-          description: t`Create your first sales invoice for the created customer`,
+          description: t`Create your first Fee Statement for the created customer`,
           action: () => routeTo('/list/SalesInvoice'),
           fieldname: 'invoiceCreated',
           documentation:
@@ -135,9 +135,9 @@ export function getGetStartedConfig(): GetStartedConfigItem[] {
         },
         {
           key: 'Add Suppliers',
-          label: t`Add Suppliers`,
+          label: t`Add Service Providers`,
           icon: 'supplier',
-          description: t`Add a few suppliers to create your first purchase invoice`,
+          description: t`Add a few Service Providers to create your first purchase invoice`,
           action: () =>
             routeTo({
               path: `/list/Party/${t`Suppliers`}`,

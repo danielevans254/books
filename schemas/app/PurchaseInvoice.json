@@ -1,6 +1,6 @@
 {
   "name": "PurchaseInvoice",
-  "label": "Purchase Invoice",
+  "label": "Expenses",
   "extends": "Invoice",
   "naming": "numberSeries",
   "showTitle": true,

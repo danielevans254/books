@@ -1,6 +1,6 @@
 {
   "name": "SalesInvoice",
-  "label": "Sales Invoice",
+  "label": "Income",
   "extends": "Invoice",
   "naming": "numberSeries",
   "showTitle": true,
@@ -17,7 +17,7 @@
     },
     {
       "fieldname": "party",
-      "label": "Customer",
+      "label": "Student",
       "fieldtype": "Link",
       "target": "Party",
       "create": true,

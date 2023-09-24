@@ -81,14 +81,14 @@
       class="flex flex-col items-center justify-center my-auto"
     >
       <img src="../../assets/img/list-empty-state.svg" alt="" class="w-24" />
-      <p class="my-3 text-gray-800">{{ t`No entries found` }}</p>
+      <p class="my-3 text-gray-800">{{ t`No records found` }}</p>
       <Button
         v-if="canCreate"
         type="primary"
         class="text-white"
         @click="$emit('makeNewDoc')"
       >
-        {{ t`Make Entry` }}
+        {{ t`Create New` }}
       </Button>
     </div>
   </div>
